@@ -1,0 +1,162 @@
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../fonts/Poppins-Regular.ttf)
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(../fonts/Poppins-Medium.ttf)
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(../fonts/Montserrat-Medium.ttf)
+}
+
+@font-face {
+    font-family: Montserrat-SemiBold;
+    src: url(../fonts/Montserrat-SemiBold.ttf)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body, html {
+    height: 100%;
+    font-family: Poppins-Regular, sans-serif
+}
+
+a {
+    font-family: Poppins-Regular, serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666;
+    margin: 0;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s
+}
+
+a:focus {
+    outline: none !important
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.content {
+    width: 100%;
+    margin: 0 auto
+}
+
+.content-login {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.box-login {
+    width: 680px;
+    border-radius: 10px;
+    position: relative
+}
+
+.box-form {
+    width: 100%
+}
+
+.btn-linkedin {
+    font-family: Montserrat-SemiBold, serif;
+    font-size: 18px;
+    line-height: 1.2;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+    height: 70px;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+    -o-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+    -ms-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+    position: relative;
+    z-index: 1
+}
+
+.btn-linkedin::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    background-color: #1b394a;
+    opacity: 0;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s
+}
+
+.btn-linkedin {
+    color: #fff;
+    background-color: #0e76a8
+}
+
+.btn-linkedin i {
+    font-size: 30px;
+    margin-right: 17px;
+    padding-bottom: 3px
+}
+
+.btn-linkedin:hover:before {
+    opacity: 1
+}
+
+.btn-linkedin:hover {
+    color: #fff
+}
+
+@media (max-width: 768px) {
+    .box-login {
+        padding-left: 60px;
+        padding-right: 60px
+    }
+
+    @media (max-width: 576px) {
+        .box-login {
+            padding-left: 15px;
+            padding-right: 15px
+        }
+
+        .btn-linkedin {
+            width: 100%
+        }
+    }
+}

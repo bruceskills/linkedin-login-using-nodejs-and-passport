@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Linkedin login using node and passport</title>
+        <link type="text/css" rel="stylesheet" href="/css/profile.css">
+    </head>
+    <body>
+        <div class="profile-card">
+            <div class="profile-card-header">
+                <div class="profile-image" style="background-image: url(<%= user.photos[1]['value'] %>);"></div>
+                <div class="profile-info">
+                    <h3 class="profile-name"><%= user.displayName %></h3>
+                    <p class="profile-desc"><%= user.emails[0]['value'] %></p>
+                </div>
+            </div>
+            <div class="action">
+                <a href="/logout" class="btn btn-gray-outline">Logout</a>
+            </div>
+        </div>
+    </body>
+</html>
